@@ -1,0 +1,759 @@
+/*HEADER*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ html{
+  display: flex;
+ }
+
+
+p{
+  font-family: "Overpass",sans-serif;
+  font-weight: 100;
+  font-size: 18;
+  color: rgb(46, 46, 46);
+  line-height: 1.75;
+  display: block;
+  width: 100%;
+ 
+  
+  
+}
+
+.plain_text{
+  font-family: "Overpass",sans-serif;
+  font-weight: 200;
+  font-size: 18;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+ 
+}
+
+.plain_text_2{
+  font-family: "Overpass",sans-serif;
+  font-weight: 400;
+  font-size: 24;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+
+ 
+}
+
+ul {
+ list-style:none;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FE9B71; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1rem; /* Also needed for space (tweak if needed) */
+  margin-left: 0rem; /* Also needed for space (tweak if needed) */
+}
+
+li {
+  color: #21343B;
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+  
+}
+
+
+h1{
+  font-family: "Questrial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 51;
+  line-height: 1.5;
+  letter-spacing: 0.25rem;
+  line-height: 1;
+  color: #21343B;
+}
+
+h2{
+  font-family: "Questrial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 33;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  color: #21343B;
+  text-align: left;
+}
+
+.h2_1{
+  font-family: "Questrial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 33;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+}
+
+.h2_2{
+  font-family: "Questrial",sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+}
+
+.h2_skills{
+  font-family: "Questrial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 33;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  color: #21343B;
+  text-align: center;
+}
+
+.h2_skills_f{
+  font-family: "Questrial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 33;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  color: #d2d2d2;
+  text-align: center;
+}
+
+
+
+.kontakty{
+ display: flex;
+ justify-content: center;
+ margin-top: 18px;
+
+}
+
+.icon{
+  height: 39px;
+}
+
+.text_1{
+  font-family: "Overpass",sans-serif;
+  font-weight: 400;
+  font-size: 24;
+  color: #21343B;
+  line-height: 1.5;
+}
+
+.about_me{
+  font-family: "Overpass",sans-serif;
+  font-weight: 100;
+  font-size: 18;
+  color: #21343B;
+  line-height: 1.75;
+  display: block;
+  margin-top: 24px;
+  text-align: left;
+
+}
+
+hr{
+  border: 0;
+  height: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.hr_1{
+  height: 24px;
+  border: 0;
+  margin-bottom: 96px;
+  position: relative;
+  width: 100%; 
+}
+
+.hr_2{
+  border: 0;
+  height: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  width: 100%; 
+}
+
+
+
+.hr_3{
+  border: 0;
+  height: 24px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  position: relative;
+  width: 100%; 
+}
+
+.hr_divider{
+  border: 0;
+  height: 24px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  position: relative;
+  width: 100%; 
+}
+
+.hr_divider_1{
+    border: 0;
+    height: 0px;
+    margin-bottom: 96px;
+    position: relative;
+    width: 100%; 
+  }
+
+  .maly_nadpis{
+    font-family: "Overpass",sans-serif;
+    font-size: 24;
+    line-height: 1.5;
+  }
+
+  .skill_nadpis{
+    font-family: "Overpass",sans-serif;
+    font-size: 24;
+    line-height: 1.5;
+    color: #21343B;
+    font-weight: 400;
+  }
+
+  .buttons{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    gap: 18px;
+    
+
+  }
+
+  .my_buttons{
+    width: 246px;
+    height: 60px;
+    border-radius: 33px;
+    border: none;
+    background-color: #E2C53D;
+    font-family: "Questrial",sans-serif;
+    font-size: 18;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    padding: 0 1.25rem; 
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .my_buttons:hover{
+    background: rgba(254, 155, 113)
+    
+    
+  }
+
+  .my_buttons_2{
+    width: 246px;
+    height: 60px;
+    border-radius: 33px;
+    border: none;
+    background-color: #FE9B71;
+    font-family: "Questrial",sans-serif;
+    font-size: 18;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    padding: 0 1.25rem; 
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .my_buttons_2:hover{
+    background: rgba(226, 197, 61)
+  }
+
+
+ body{
+  background:#EBE9EA;
+  }
+
+
+/*@media*/
+.video{
+  margin: 0 auto;
+  width: 1000px;
+  justify-content: center;
+}
+
+.video_wrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.video_wrapper iframe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  
+  display: flex;
+  justify-content: space-between;
+  background-color:#e4e4e4;
+  align-items: center;
+  padding-left: 144px;
+  padding-right: 144px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index:1;
+}
+
+.name{
+  display: flex;
+  
+  justify-content: left;
+  font-family: 'Questrial',sans-serif;
+  font-size: 24;
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: 0.2rem;
+}
+
+.option{
+  
+  flex: 1;
+  display:flex;
+  text-align: center;
+  justify-content: center; 
+}
+
+.menu{
+display: flex;
+height: 66px;
+justify-content: space-around;
+padding-top: 24;
+padding-bottom: 24;
+padding-right: 16;
+padding-left: 16;
+font-family: 'Questrial',sans-serif;
+font-size: 18;
+letter-spacing: 0.2rem;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.right-section{
+  display: flex;
+  justify-content: right; 
+}
+
+label{
+  display: block;
+  width: 80px; 
+  height:40px; 
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+label:after{
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 36px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+input{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label{
+  background: #17293d;
+}
+
+input:checked + label::after{
+left: 78px;
+transform: translateX(-100%);
+background: linear-gradient(180deg,#777,#3a3a3a);
+}
+
+label:active:after{
+ width: 48px;
+}
+
+
+
+
+/*CHECKED*/
+body:has(.right-section):has(input:checked){
+ background: #15202B;
+ transition: 0.3s;
+}
+
+header:has(input:checked){
+    background: #192734;
+    transition: 0.6s;
+  }
+
+body:has(.name):has(input:checked){
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) .menu{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) p{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) h1{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) h2{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) .about_me{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) .h2_skills{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) .skill_nadpis{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) li{
+ color: #ffffff;
+ transition: 0.6s;
+}
+
+body:has(input:checked) .footer{
+  background: #192734;
+  transition: 0.3s;
+ }
+
+ body:has(input:checked) .my_buttons{
+  background-color: #ed6313;
+  transition: 0.3s;
+ }
+
+ body:has(input:checked) .my_buttons_2{
+  background-color: #ebad11;
+  transition: 0.3s;
+ }
+
+ body:has(input:checked) .menu:hover{
+  background-color: #ebad11;
+  transition: 0.3s;
+ }
+
+ body:has(input:checked) .my_buttons:hover{
+  background-color:rgb(224, 201, 51);
+  transition: 0.3s;
+ }
+
+ body:has(input:checked) .my_buttons_2:hover{
+  background-color:#ed6313;
+  transition: 0.3s;
+ }
+/*CHECKED*/
+
+
+a{
+  text-decoration: none;
+  color: #21343B;
+}
+
+.menu:hover{
+  background-color: rgb(224, 201, 51) ; 
+}
+.menu:active{
+  background-color:#FE9B71 ;
+  
+}
+
+
+.oufoto{
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+  width: 216px;
+  height: 216px;
+}
+.oufoto_2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+/*@media*/
+.ou2{
+  object-fit: cover;
+  object-position: center;
+  position:relative; 
+  width: 600px;
+  height: 600px;
+  border-radius: 300px;
+  
+}
+
+/*@media*/
+.ou_3{
+  width: 576px;
+  height: 576px;
+  
+}
+
+
+
+
+.image_grid{
+  --gap:24px;
+  --num-cols:2;
+  --row-width: 100%;
+  --row-height:150px;
+
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols),1fr);
+  grid-auto-rows: var(--row-height);
+  gap: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.image_grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+
+
+
+.row_1{
+  display: flex;
+}
+
+.A{
+  flex: 1;
+  padding-left: 144px;
+}
+
+.B{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  object-fit: contain;
+  width: 100%;
+  padding-right: 144px;
+  
+  
+}
+
+.row_2{
+  display: flex;
+}
+
+/*@media*/
+.A_2{
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  padding-left: 144px;
+  width: 100%;
+  height: 576px;
+}
+
+/*@media*/
+.B_2{
+  flex: 1;
+  
+  padding-right: 144px;
+  width: 100%;
+  height: 576px;
+}
+
+.AB_middle{
+  padding: 50px;
+}
+
+
+
+.row_skills{
+  display: flex;
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+.colume_1{
+  flex:1;
+  padding-left: 48px;
+  
+}
+
+.colume_2{
+  flex:1;
+  padding-left: 48px;
+  
+  
+}
+
+.colume_3{
+  flex:1;
+  width: 100%;
+  padding-left: 48px;
+  
+  
+}
+
+.footer{
+  display: flex;
+  width: 100%;
+  height: 416px;
+  background-color: #21343B;
+  justify-content: center;
+  text-align: center;
+}
+
+/*@media*/
+.obsah_footeru{
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+  padding: 48px 144px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px){
+ 
+  .AB_middle{
+    padding: 16px;
+  }
+ 
+  .image_grid{
+    --gap:24px;
+    --num-cols:1;
+    --row-width: 224px;
+    --row-height:360px;
+  
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height);
+    gap: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .row_skills{
+    display: inline-block;
+    padding-left: 144px;
+    padding-right: 144px;
+    max-width: 100%; 
+    justify-content: center;
+  }
+  
+  
+  .colume_1{
+   
+    flex:1;
+    max-width: 100%;
+    padding-left: 48px;
+   
+  }
+  
+  .colume_2{
+    
+    flex:1;
+    max-width: 100%;
+    padding-left: 48px;
+   
+  }
+  
+  .colume_3{
+  
+    flex:1;
+    max-width: 100%;
+    padding-left: 48px;
+    
+  }
+
+  ul {
+    list-style:none;
+   }
+   
+   ul li::before {
+     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+     color: #FE9B71; /* Change the color */
+     font-weight: bold; /* If you want it to be bold */
+     display: inline-block; /* Needed to add space between the bullet and the text */
+     width: 1rem; /* Also needed for space (tweak if needed) */
+     margin-left: 0rem; /* Also needed for space (tweak if needed) */
+   }
+   
+   li {
+     color: #21343B;
+     font-family: 'Overpass', sans-serif;
+     font-size: 18px;
+     line-height: 24px;
+     font-weight: 200;
+     letter-spacing: 0.5px;
+     margin-top: 12px;
+     
+   }
+  
+}
+
+/*udělat optimalizaci na mobil skills + grid + ostatní*/
+
+
+
+
+
